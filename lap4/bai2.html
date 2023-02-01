@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="lap4.js"></script>
+
+</head>
+<body ng-app="myapp">
+    <div ng-controller="bai2Controller">
+        <table border="1">
+            <tr>
+                <td>Ten</td>
+                <td>{{ student.ten }}</td>
+            </tr>
+            <tr>
+                <td>Ngay sinh</td>
+                <td>{{ student.ngaysinh }}</td>
+            </tr>
+            <tr>
+                <td>Gioi tinh</td>
+                <td>{{ student.gioitinh }}</td>
+            </tr>
+            <tr>
+                <td>Photo</td>
+                <td>{{ student.photo }}</td>
+            </tr>
+            <tr>
+                <td>Diem TB</td>
+                <td>{{ student.diemTB }}</td>
+            </tr>
+           
+        </table>
+    </div>
+</body>
+</html>

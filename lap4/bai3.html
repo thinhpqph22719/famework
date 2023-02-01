@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="lap4.js"></script>
+
+</head>
+<body ng-app="myapp">
+    <div ng-controller="bai3Controller">
+        <table class="table table-bordered table-condenseds">
+            
+                <tr>
+                <td>Hinh</td>
+                <td>Ho va ten</td>
+                <td>Ngay sinh</td>
+                <td>Gioi tinh</td>
+                <td>Diem Tb</td>
+                
+            </tr>
+            <tr ng-repeat="if in students">
+                <td> <img src="photo/{{if.photo}}"/></td>
+                <td>{{if.ten}}</td>
+                <td>{{if.ngaysinh}}</td>
+                <td>{{if.gioitinh}}</td>
+                <td>{{if.diemTB}}</td>
+            </tr>
+            
+            
+        </table>
+    </div>
+</body>
+</html>
